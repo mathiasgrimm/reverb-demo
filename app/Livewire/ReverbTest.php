@@ -17,5 +17,6 @@ class ReverbTest extends Component
     public function sendMessage()
     {
         SendMessage::dispatch($this->message);
+        $this->message = '';
     }
 }
